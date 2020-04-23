@@ -31,10 +31,9 @@ public class CruscalAlgorithem {
 		
 		Cruscal cruscalAlg = new Cruscal();
 		
-		if( cruscalAlg.kontrollLidhshmerie( Grafi, Grafi.length ) ) {
 			
 			druPerfshires = cruscalAlg.druPerfshiresMinimal( Grafi, Grafi.length );
-		}
+		
 		
 		
 		

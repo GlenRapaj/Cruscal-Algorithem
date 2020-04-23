@@ -5,32 +5,7 @@ import java.util.List;
 
 public class Cruscal {
 	
-	public boolean kontrollLidhshmerie( double[][] Grafi , int n ) { 
-		
-		double S = 0;
-		boolean lidhur = true;
-		
-		for( int i = 0 ; i < n ; i++ ) {
-			S = 0;
-			for( int j = 0 ; j < n ; j++ ) {
-				
-				S = S + Grafi[i][j];
-				
-				if( S > 0 ) {
-					// lidhur = true;
-					break;
-				}
-			}
-			
-			if( S == 0 ) {
-				lidhur = false;
-				break;
-			}
-		}
-		
-		return lidhur;
-	}
-	
+
 	
 	
 	
