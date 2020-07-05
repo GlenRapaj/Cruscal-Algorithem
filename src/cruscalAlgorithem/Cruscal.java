@@ -5,7 +5,39 @@ import java.util.List;
 
 public class Cruscal {
 	
-
+	// Kontrollon lidhshmerine e grafit nepermjet alg greedy
+	public boolean Kontrolllidhur( List<Integer> a , List<Integer> b, double[][] Matricapeshave ) {  
+	    
+		boolean pergjigje = true ;
+		b.add(a.get(0)) ; 
+		a.remove(0);    
+		for( int i =0 ; i< a.size() ; i++) 
+		{ 
+		
+		 int gjbpara = b.size();  
+		
+			for( int j =0 ; j < a.size() ; j++) 
+			{    
+				if( Matricapeshave[i][j] != 0 )
+				{    
+					b.add(a.get(i)) ;   
+					a.remove(i); 
+				}
+			} 
+			
+			int  gjbpas = b.size();  
+			
+			if( gjbpara == gjbpas)
+			{ 
+				pergjigje = false ;
+				System.out.println( " Graf jo I lidhur ");  
+				break ;
+			}
+			
+		}
+		
+		return pergjigje ;
+	}
 	
 	
 	
