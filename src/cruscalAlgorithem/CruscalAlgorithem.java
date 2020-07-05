@@ -31,11 +31,11 @@ public class CruscalAlgorithem {
 		
 		Cruscal cruscalAlg = new Cruscal();
 		
-			
+		boolean lidhshmeria = cruscalAlg.Kontrolllidhur(a, b, Grafi);
+		
+		if( lidhshmeria ){
 			druPerfshires = cruscalAlg.druPerfshiresMinimal( Grafi, Grafi.length );
-		
-		
-		
+		}
 		
 		for( int i = 0 ; i < Grafi.length ; i++ ) {
 			for( int j = i ; j < Grafi.length ; j++ ) {
