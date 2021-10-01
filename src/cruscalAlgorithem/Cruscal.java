@@ -77,12 +77,12 @@ public class Cruscal {
 					kulmet.add(Integer.parseInt( dykulmet[1] ));
 					dru [ Integer.parseInt( dykulmet[0] ) ][ Integer.parseInt( dykulmet[1] ) ] = peshat.get( i );
 				}
-		}else {
-			kulmet.add(Integer.parseInt( dykulmet[0] ));
-			kulmet.add(Integer.parseInt( dykulmet[1] ));
-			dru [ Integer.parseInt( dykulmet[0] ) ][ Integer.parseInt( dykulmet[1] ) ] = peshat.get( i );
-		}	
+			}else {
+				kulmet.add(Integer.parseInt( dykulmet[0] ));
+				kulmet.add(Integer.parseInt( dykulmet[1] ));
+				dru [ Integer.parseInt( dykulmet[0] ) ][ Integer.parseInt( dykulmet[1] ) ] = peshat.get( i );
+			}	
 		}
-			return dru ;
-		}
+		return dru ;
+	}
 }
