@@ -2,28 +2,27 @@ package cruscalAlgorithem;
 
 public class CruscalAlgorithem {
 
-		public static boolean BFS( double[][] grafi, int b ) { 
-			boolean lidhur = true;
-			LinkedList<Integer > que = new LinkedList<Integer >();
-			boolean[] visited = new boolean[grafi.length ];
-			for ( int i = 0; i < visited.length ; i ++) {  visited[i ] = false; }
-			visited[b] = true ;
-			removeQue( visited,  que,  grafi, b );
-			while(  que.size() != 0 ) {
-				int t = que.poll();
-				visited[t] = true;
-				removeQue( visited, que, grafi, t);	
-			}
-			for(int j = 0 ; j < visited.length ; j++ ) {
-				if( !visited[j] ) {
-					lidhur = false;
-					break ;
-				}	
-			}
-			return lidhur ;
+	public static boolean BFS( double[][] grafi, int b ) { 
+		boolean lidhur = true;
+		LinkedList<Integer > que = new LinkedList<Integer >();
+		boolean[] visited = new boolean[grafi.length ];
+		for ( int i = 0; i < visited.length ; i ++) {  visited[i ] = false; }
+		visited[b] = true ;
+		removeQue( visited,  que,  grafi, b );
+		while(  que.size() != 0 ) {
+			int t = que.poll();
+			visited[t] = true;
+			removeQue( visited, que, grafi, t);	
+		}
+		for(int j = 0 ; j < visited.length ; j++ ) {
+			if( !visited[j] ) {
+				lidhur = false;
+				break;
+			}	
+		}
+		return lidhur ;
 	}
 		
-	
 	public static void main(String[] args) {
 		double[][] Grafi = new double[4][4];
 		
