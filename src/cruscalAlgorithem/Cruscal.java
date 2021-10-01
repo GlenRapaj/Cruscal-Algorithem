@@ -18,7 +18,7 @@ public class Cruscal {
 					a.remove(i); 
 				}
 			} 
-			int  gjbpas = b.size();  
+			int gjbpas = b.size();  
 			if( gjbpara == gjbpas){ 
 				pergjigje = false ;
 				System.out.println( " Graf jo I lidhur ");  
@@ -27,8 +27,6 @@ public class Cruscal {
 		}
 		return pergjigje ;
 	}
-	
-	
 	
 	public double[][] druPerfshiresMinimal( double[][] Grafi, int n ) {
 		 // mban kulmet qe jane marre ne konsiderate 
